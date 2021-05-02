@@ -1,0 +1,17 @@
+name: IronGolemSpawnCanceller
+version: @version@
+main: com.github.huda0209.irongolemspawncanceller.IronGolemSpawnCanceller
+api-version: 1.13
+prefix: IronGolemSpawnCanceller
+authors: [ huda0209 ]
+commands:
+  igsc:
+    description: IronGolemSpawnCanceller plugin command.
+    usage:
+        /<command> reload - join config.
+        /<command> setmode [true/false] - set mode to spawn IronGolem.
+permissions:
+  IronGolemSpawnCanceller.SetMode:
+    default: op
+  IronGolemSpawnCanceller.Reload:
+    default: op
