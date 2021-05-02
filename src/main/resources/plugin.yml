@@ -8,7 +8,7 @@ commands:
   igsc:
     description: IronGolemSpawnCanceller plugin command.
     usage:
-        /<command> reload - join config.
+        /<command> reload - Reload config.\n
         /<command> setmode [true/false] - set mode to spawn IronGolem.
 permissions:
   IronGolemSpawnCanceller.SetMode:
