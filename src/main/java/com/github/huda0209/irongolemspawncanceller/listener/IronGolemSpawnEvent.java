@@ -25,9 +25,11 @@ public class IronGolemSpawnEvent implements Listener {
         IronGolem ig = (IronGolem) entity;
 
         if(!ig.isPlayerCreated()) event.setCancelled(true);
-        System.out.println("[IronGolemSpawnCanceller]-------------------------------\nTo spawn IronGolem successful Cancelled.\n"+
-                "World : "+entity.getWorld().getName()+"\n"+
-                "Location: ("+entity.getLocation().getX()+", "+entity.getLocation().getY()+", "+entity.getLocation().getZ()+
-                "\n-------------------------------");
+        plugin.getLogger().info("------------------------------------------");
+        plugin.getLogger().info("To spawn IronGolem successful Cancelled.");
+        plugin.getLogger().info("World : " +entity.getWorld().getName());
+        plugin.getLogger().info("Location: ("+entity.getLocation().getX()+", "+entity.getLocation().getY()+", "+entity.getLocation().getZ()+")");
+        plugin.getLogger().info("------------------------------------------");
+
     }
 }
